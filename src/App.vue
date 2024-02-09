@@ -1,26 +1,51 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="page">
+    <LayoutHeader />
+    <main class="main container">
+      <UBreadcrumbs />
+      <SliderWrapper />
+      <CharactersList />
+    </main>
+    <LayoutFooter />
+  </div>
+  <CommonSvgMasks />
+  <CommonScrollbarProgress />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LayoutHeader from '@/components/layout/LayoutHeader'
+import LayoutFooter from '@/components/layout/LayoutFooter'
+import UBreadcrumbs from '@/components/ui/UBreadcrumbs'
+import CharactersList from '@/components/views/CharactersList'
+import SliderWrapper from '@/components/views/SliderWrapper'
+import CommonSvgMasks from '@/components/common/CommonSvgMasks'
+import CommonScrollbarProgress from '@/components/common/CommonScrollbarProgress'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    LayoutHeader,
+    LayoutFooter,
+    UBreadcrumbs,
+    CharactersList,
+    SliderWrapper,
+    CommonSvgMasks,
+    CommonScrollbarProgress
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main {
+  padding-top: 88px;
+
+  @include on-breakpoint('md') {
+    padding-top: 96px;
+  }
 }
 </style>

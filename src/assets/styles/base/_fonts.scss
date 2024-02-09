@@ -1,0 +1,18 @@
+@font-face {
+  font-family: Nunito;
+  font-display: swap;
+  src: url('../fonts/Nunito-Bold.woff2') format('woff2'),
+    url('../fonts/Nunito-Bold.woff') format('woff'),
+    url('../fonts/Nunito-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: PhosphateSolid;
+  font-display: swap;
+  src: url('../fonts/PhosphateSolid.woff2') format('woff2'),
+    url('../fonts/PhosphateSolid.woff') format('woff'),
+    url('../fonts/PhosphateSolid.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
