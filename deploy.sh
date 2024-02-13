@@ -17,9 +17,9 @@ git add -A
 git commit -m 'deploy'
 
 # если публикация происходит по адресу https://<USERNAME>.github.io
-# git push -f git@github.com:masha-and-bear/platrum.github.io.git master
+# git push -f git@github.com:womajies/masha-and-bear.github.io.git master
 
 # если публикация происходит по адресу https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:masha-and-bear/platrum.git master:gh-pages
+git push -f git@github.com:womajies/masha-and-bear.git master:gh-pages
 
 cd -
